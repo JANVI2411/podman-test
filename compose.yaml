@@ -1,0 +1,10 @@
+services:
+  web:
+    container_name: temp-app
+    build:
+      context: .
+    ports:
+    - "5001:5001"
+    volumes:
+    - .:/app
+    restart: always
